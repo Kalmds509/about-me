@@ -23,7 +23,7 @@ body {
 }
 
 header {
-
+    position: fixed;
     top: 0;
     right: 0;
     width: 100%;
@@ -140,7 +140,7 @@ section {
 }
 
 /* Styles pour les écrans de tablettes */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     header {
         padding: 20px 10%;
     }
@@ -157,6 +157,40 @@ section {
 
     .home-text p {
         font-size: 1rem;
+    }
+}
+
+/* Styles pour les écrans de petits ordinateurs portables */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar a {
+        margin: 10px 0;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 4rem;
+    }
+
+    .home-text p {
+        font-size: 0.9rem;
     }
 }
 
@@ -190,6 +224,6 @@ section {
     }
 
     .home-text p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
